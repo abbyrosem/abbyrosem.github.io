@@ -1,0 +1,58 @@
+/* Apply a background color */
+body {
+    background-color: #f4edea;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #333333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Styling for header elements */
+h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: #5d1049;
+}
+
+/* Style paragraphs */
+p {
+    font-size: 1.1em;
+}
+
+/* Style the horizontal rule */
+hr {
+    border: none;
+    height: 2px;
+    background-color: #5d1049;
+}
+
+/* Responsive image */
+.responsive-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Link styles */
+a {
+    color: #a63771;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff69b4;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #7a1f4f;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
