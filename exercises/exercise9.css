@@ -1,0 +1,93 @@
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Changed back to light gray */
+    margin: 0;
+    padding: 0;
+}
+
+/* Wrapper container */
+.wrapper {
+    /* border: 2px solid black; */ /* Commented out to hide the border */
+    display: grid;
+    grid-template-rows: 150px min-content min-content 1fr; /* Changed rows 2 and 3 to min-content */
+    grid-template-columns: 2fr 5fr 2fr;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header styling */
+header {
+    background-color: rgb(196, 233, 246);
+    text-align: center;
+    padding: 20px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/* h1 styling */
+h1 {
+    text-align: center;
+}
+
+/* Left empty space */
+.emptyspaceleft {
+    background-color: white;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+/* Main content */
+main {
+    background-color: white;
+    padding: 20px;
+    text-align: left;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* Added extra padding in main */
+main {
+    padding: 2rem; /* Added extra padding */
+}
+
+/* Right empty space */
+.emptyspaceright {
+    background-color: white;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+/* Footer styling */
+footer {
+    background-color: rgb(237, 211, 231);
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    padding: 2rem; /* Added padding */
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/* Address selector to remove italics in footer */
+address {
+    font-style: normal; /* Removed default italics */
+}
+
+
+
+
+
