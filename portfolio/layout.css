@@ -1,0 +1,75 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #fafafa;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #efa8e2; /* Light Pink */
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .nav-links a {
+    margin-left: 2rem;
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #91d0e4; /* Accent color on hover */
+  }
+  
+  /* Content placeholder */
+  .content {
+    flex: 1;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #f0f0f0 0%, #ffffff 100%);
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #efa8e2; /* Light pink to match navbar */
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #f0f0f0;
+    border-top: 3px solid #96d4f8; /* Accent color */
+  }
+  
+  .footer p {
+    font-size: 1.1rem;
+  }
+  
+  
+  
