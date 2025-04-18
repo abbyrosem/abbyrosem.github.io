@@ -1,11 +1,13 @@
-/* Reset basic styles */
-* {
+/* ================================
+   RESET & BASE STYLES
+   ================================ */
+   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     background-color: #fafafa;
@@ -13,63 +15,135 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-  }
-  
-  /* Navbar */
-  .navbar {
+}
+
+
+/* ================================
+   NAVIGATION BAR
+   ================================ */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #efa8e2; /* Light Pink */
+    background-color: #edafb8; /* Cherry Blossom Pink */
     padding: 1rem 2rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
-  }
-  
-  .logo a {
+    border-top: 3px solid #B0C4B1; /* Accent color */
+    border-bottom: 3px solid #B0C4B1; /* Accent color */
+}
+
+.logo a {
     text-decoration: none;
     font-size: 1.8rem;
     font-weight: bold;
     color: #fff;
     text-transform: uppercase;
-  }
-  
-  .nav-links a {
+}
+
+.nav-links a {
     margin-left: 2rem;
     text-decoration: none;
     color: #f0f0f0;
     font-weight: 500;
-    transition: color 0.3s;
-  }
-  
-  .nav-links a:hover {
-    color: #91d0e4; /* Accent color on hover */
-  }
-  
-  /* Content placeholder */
-  .content {
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #B0C4B1; /* Accent color on hover */
+}
+
+
+/* ================================
+   MAIN CONTENT
+   ================================ */
+.content {
     flex: 1;
     padding: 3rem 2rem;
     background: linear-gradient(135deg, #f0f0f0 0%, #ffffff 100%);
     border-radius: 8px;
-    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
-  }
-  
-  /* Footer */
-  .footer {
-    background-color: #efa8e2; /* Light pink to match navbar */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ================================
+   FOOTER
+   ================================ */
+   .footer {
+    background-color: #edafb8; /* Pink to match navbar */
     padding: 1rem 2rem;
     text-align: center;
     font-size: 0.9rem;
     color: #f0f0f0;
-    border-top: 3px solid #96d4f8; /* Accent color */
-  }
-  
-  .footer p {
+    border-top: 3px solid #B0C4B1; /* Accent color */
+}
+
+.footer p {
     font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+/* ================================
+   LINKS IN FOOTER (LinkedIn & Email)
+   ================================ */
+.links {
+    background-color: #B0C4B1;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+.links ul {
+    list-style-type: none; 
+    padding-left: 0;
+}
+
+
+.links a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #232612;
+}
+
+/* ================================
+   ABOUT ME PAGE
+   ================================ */
+
+   .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+    padding: 1rem 0;
   }
   
+  .about-photo img {
+    max-width: 250px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
   
+  .about-text {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .about-photo img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
   
