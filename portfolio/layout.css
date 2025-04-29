@@ -263,89 +263,137 @@ body {
   .card-btn:hover {
     background-color: #c7929c;
   }
-  
-  /* ================================
-   HOME/WELCOME PAGE
-   ================================ */
-/* ================================
-   HOME PAGE
-   ================================ */
-   .hero {
-    background: linear-gradient(135deg, #edafb8 0%, #f7e3e7 100%);
+  .hero {
+    background: linear-gradient(135deg, #fef6f9 0%, #f0f0f0 100%);
+    padding: 4rem 2rem;
+    border-radius: 8px;
+    margin-bottom: 4rem;
     text-align: center;
-    padding: 6rem 2rem;
-    border-radius: 12px;
-    margin-bottom: 3rem;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   }
   
-  .hero h1 {
-    font-family: 'Poppins', sans-serif;
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    animation: fadeUp 1s ease-out;
+  }
+  
+  .hero-text h1 {
     font-size: 3rem;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 0.5rem;
+    color: #edafb8;
+    margin-bottom: 1rem;
   }
   
-  .hero p {
-    font-family: 'Open Sans', sans-serif;
+  .hero-text p {
     font-size: 1.5rem;
-    color: #fefefe;
+    color: #555;
     margin-bottom: 1.5rem;
   }
   
   .hero-btn {
     background-color: #B0C4B1;
+    padding: 0.8rem 1.6rem;
     color: #fff;
-    padding: 0.7rem 1.4rem;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 6px;
     font-weight: 600;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
   }
   
   .hero-btn:hover {
     background-color: #95a79a;
+    box-shadow: 0 0 10px #95a79a80;
   }
   
-  .home-intro {
+  .hero-image img.hero-photo {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Fade Up Animation */
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Scroll Down Arrow */
+  .scroll-down {
+    margin-top: 2rem;
     text-align: center;
-    max-width: 800px;
-    margin: 0 auto 3rem auto;
-    font-size: 1.2rem;
-    color: #444;
+    animation: bounce 2s infinite;
   }
   
-  .home-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
   }
   
-  .home-card {
-    background-color: #ffffff;
-    padding: 2rem;
-    border-radius: 12px;
+  .scroll-down i {
+    font-size: 2rem;
+    color: #B0C4B1;
+  }
+  
+  /* ================================
+     MAIN CONTENT
+     ================================ */
+  .homepage-main {
     text-align: center;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    padding: 2rem 2rem 4rem 2rem;
   }
   
-  .home-card:hover {
-    transform: translateY(-8px);
-    background-color: #f4f4f4;
-  }
-  
-  .home-card h2 {
+  .homepage-main h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
     color: #edafb8;
+  }
+  
+  .homepage-main p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+  }
+  
+  .homepage-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .homepage-link {
+    background-color: #B0C4B1;
+    padding: 0.8rem 1.6rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .homepage-link:hover {
+    background-color: #95a79a;
+    box-shadow: 0 0 10px #95a79a80;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #555;
+    margin-top: 0.5rem;
     margin-bottom: 1rem;
     font-family: 'Poppins', sans-serif;
   }
   
-  .home-card p {
-    color: #555;
-    font-family: 'Open Sans', sans-serif;
-  }
+
+ 
   
