@@ -54,6 +54,20 @@ body {
     color: #B0C4B1; /* Accent color on hover */
 }
 
+.logo-img {
+    height: 60px;
+    width: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Make it a bit bigger on larger screens */
+  @media (min-width: 768px) {
+    .logo-img {
+      height: 75px;
+    }
+  }
+  
 
 /* ================================
    MAIN CONTENT
