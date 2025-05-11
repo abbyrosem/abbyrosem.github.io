@@ -131,34 +131,54 @@ body {
 /* ================================
    ABOUT ME PAGE
    ================================ */
+   .about-project, .about-section {
+    text-align: center;
+    background: linear-gradient(135deg, #fef6f9 0%, #ffffff 100%);
+    padding: 3rem 2rem;
+    margin-top: 4rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
 
-   .about-content {
+.about-project h2, .about-section h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: #edafb8;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #edafb8;
+    padding-bottom: 0.5rem;
+}
+
+.about-project p, .about-section .about-text p {
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.7;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.about-content {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     align-items: flex-start;
     padding: 1rem 0;
-  }
-  
-  .about-photo img {
-    max-width: 250px;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .about-text {
-    flex: 1;
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-  
-  .about-photo img {
+}
+
+.about-photo img {
     width: 250px;
     height: 250px;
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
+}
+
+.about-text {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.6;
+}
   
   /* ================================
    RESUME PAGE (DOWNLOAD/GRID)
@@ -408,6 +428,97 @@ body {
     font-family: 'Poppins', sans-serif;
   }
   
-
- 
+  .pdf-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+  }
+  
+  .pdf-list li {
+    margin-bottom: 0.75rem;
+  }
+  
+  .pdf-list a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .pdf-list a:hover {
+    color: #c7929c;
+  }
+  
+  .pdf-list i {
+    color: #B0C4B1;
+    font-size: 1.1rem;
+  }
+  .portfolio-section {
+    margin-top: 4rem;
+  }
+  
+  .portfolio-section h2 {
+    font-size: 2rem;
+    color: #edafb8;
+    margin-bottom: 2rem;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+  }
+  
+  .pdf-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .pdf-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .pdf-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .pdf-icon {
+    color: #B0C4B1;
+    margin-bottom: 1rem;
+  }
+  
+  .pdf-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .pdf-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .pdf-card a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #edafb8;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pdf-card a:hover {
+    background-color: #c78f9b;
+  }
   
