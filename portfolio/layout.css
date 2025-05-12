@@ -2,11 +2,12 @@
    RESET & BASE STYLES
    ================================ */
    * {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     background-color: #fafafa;
@@ -14,185 +15,202 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-}
-
-
-/* ================================
-   NAVIGATION BAR
-   ================================ */
-.navbar {
+  }
+  
+  /* ================================
+     NAVIGATION BAR
+     ================================ */
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #edafb8; /* Cherry Blossom Pink */
+    background-color: #edafb8;
     padding: 1rem 2rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-top: 3px solid #B0C4B1; /* Accent color */
-    border-bottom: 3px solid #B0C4B1; /* Accent color */
-}
-
-.logo a {
+    border-top: 3px solid #B0C4B1;
+    border-bottom: 3px solid #B0C4B1;
+  }
+  
+  .logo a {
     text-decoration: none;
     font-size: 1.8rem;
     font-weight: bold;
     color: #fff;
     text-transform: uppercase;
-}
-
-.nav-links a {
-    margin-left: 2rem;
+  }
+  
+  .nav-links ul {
+    display: flex;           
+    list-style: none;        
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin-left: 2rem;       
+  }
+  
+  .nav-links a {
     text-decoration: none;
     color: #f0f0f0;
     font-weight: 500;
     transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #B0C4B1; /* Accent color on hover */
-}
-
-.logo-img {
+  }
+  
+  .nav-links a:hover {
+    color: #B0C4B1;
+  }
+  
+  
+  
+  .logo-img {
     height: 60px;
     width: auto;
     display: block;
     transition: transform 0.3s ease;
   }
   
-  /* Make it a bit bigger on larger screens */
   @media (min-width: 768px) {
     .logo-img {
       height: 75px;
     }
   }
   
-
-/* ================================
-   MAIN CONTENT
-   ================================ */
-.content {
+  /* ================================
+     MAIN CONTENT
+     ================================ */
+  .content {
     flex: 1;
     padding: 3rem 2rem;
     background: linear-gradient(135deg, #f0f0f0 0%, #ffffff 100%);
     border-radius: 8px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-}
-
-
-/* ================================
-   FOOTER
-   ================================ */
-   .footer {
-    background-color: #edafb8; /* Pink to match navbar */
+  }
+  
+  /* ================================
+     FOOTER
+     ================================ */
+  .footer {
+    background-color: #edafb8;
     padding: 1rem 2rem;
     text-align: center;
     font-size: 0.9rem;
     color: #f0f0f0;
-    border-top: 3px solid #B0C4B1; /* Accent color */
-}
-
-.footer p {
+    border-top: 3px solid #B0C4B1;
+  }
+  
+  .footer p {
     font-size: 1.1rem;
     margin-top: 0.5rem;
-}
-
-/* ================================
-   LINKS IN FOOTER (LinkedIn & Email)
-   ================================ */
-.links {
+  }
+  
+  /* ================================
+     FOOTER LINKS
+     ================================ */
+  .links {
     background-color: #B0C4B1;
     padding: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 30px;
     border-radius: 5px;
     margin-bottom: 0.5rem;
-}
-.links ul {
-    list-style-type: none; 
+  }
+  
+  .links ul {
+    list-style: none;
     padding-left: 0;
-}
-
-
-.links a {
+  }
+  
+  .links a {
     color: #f1f1f1;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
-}
-
-.links a:hover {
+  }
+  
+  .links a:hover {
     color: #232612;
-}
-
-/* ================================
-   ABOUT ME PAGE
-   ================================ */
-   .about-project, .about-section {
+  }
+  
+  /* ================================
+     ABOUT PAGE
+     ================================ */
+  .about-project,
+  .about-section {
     text-align: center;
     background: linear-gradient(135deg, #fef6f9 0%, #ffffff 100%);
     padding: 3rem 2rem;
     margin-top: 4rem;
     border-radius: 12px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
-}
-
-.about-project h2, .about-section h1 {
+  }
+  
+  .about-project h2,
+  .about-section h1 {
     font-family: 'Playfair Display', serif;
     font-size: 2.2rem;
     color: #edafb8;
     margin-bottom: 1.5rem;
     border-bottom: 2px solid #edafb8;
     padding-bottom: 0.5rem;
-}
-
-.about-project p, .about-section .about-text p {
+  }
+  
+  .about-project p,
+  .about-text p {
     max-width: 700px;
     margin: 0 auto 1.5rem;
     font-size: 1.1rem;
     color: #444;
     line-height: 1.7;
     font-family: 'Open Sans', sans-serif;
-}
-
-.about-content {
+  }
+  
+  .about-content {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     padding: 1rem 0;
-}
-
-.about-photo img {
+  }
+  
+  .about-photo img {
     width: 250px;
     height: 250px;
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.about-text {
+  }
+  
+  .about-text {
     flex: 1;
     font-size: 1rem;
     line-height: 1.6;
-}
+  }
   
   /* ================================
-   RESUME PAGE (DOWNLOAD/GRID)
-   ================================ */
-   .resume-grid {
+     RESUME PAGE
+     ================================ */
+  .resume-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 3rem;
     margin-top: 2rem;
   }
   
+  @media (min-width: 768px) {
+    .resume-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
   .resume-left,
   .resume-right {
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
@@ -212,8 +230,8 @@ body {
     list-style-type: square;
   }
   
-  .resume-left ul li,
-  .resume-right ul li {
+  .resume-left li,
+  .resume-right li {
     margin-bottom: 0.5rem;
   }
   
@@ -233,9 +251,9 @@ body {
   }
   
   /* ================================
-   PORTFOLIO LANDING PAGE
-   ================================ */
-   .portfolio-intro {
+     PORTFOLIO LANDING
+     ================================ */
+  .portfolio-intro {
     text-align: center;
     margin-bottom: 3rem;
   }
@@ -261,7 +279,7 @@ body {
   }
   
   .portfolio-card {
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
@@ -297,6 +315,10 @@ body {
   .card-btn:hover {
     background-color: #c7929c;
   }
+  
+  /* ================================
+     HERO SECTION
+     ================================ */
   .hero {
     background: linear-gradient(135deg, #fef6f9 0%, #f0f0f0 100%);
     padding: 4rem 2rem;
@@ -348,7 +370,6 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
   
-  /* Fade Up Animation */
   @keyframes fadeUp {
     0% {
       opacity: 0;
@@ -360,7 +381,6 @@ body {
     }
   }
   
-  /* Scroll Down Arrow */
   .scroll-down {
     margin-top: 2rem;
     text-align: center;
@@ -378,7 +398,7 @@ body {
   }
   
   /* ================================
-     MAIN CONTENT
+     HOMEPAGE CONTENT & PDF SECTIONS
      ================================ */
   .homepage-main {
     text-align: center;
@@ -386,15 +406,21 @@ body {
   }
   
   .homepage-main h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #edafb8;
+    color: #9c7c83; /* Darker shade of pink for better contrast */
   }
   
-  .homepage-main p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    color: #555;
+  .homepage-main p, .subtitle {
+    color: #333;  /* Darker gray for better readability */
+  }
+  
+  .homepage-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    list-style: none;       
+    padding-left: 0;        
+    margin: 0;              
   }
   
   .homepage-links {
@@ -415,16 +441,15 @@ body {
   }
   
   .homepage-link:hover {
-    background-color: #95a79a;
+    background-color: #94ab95;  
     box-shadow: 0 0 10px #95a79a80;
-  }
-
+  }  
+  
   .subtitle {
     font-size: 1.5rem;
     font-weight: 400;
     color: #555;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    margin: 0.5rem 0 1rem;
     font-family: 'Poppins', sans-serif;
   }
   
@@ -456,6 +481,10 @@ body {
     color: #B0C4B1;
     font-size: 1.1rem;
   }
+  
+  /* ================================
+     PDF CARD GRID
+     ================================ */
   .portfolio-section {
     margin-top: 4rem;
   }
@@ -476,7 +505,7 @@ body {
   }
   
   .pdf-card {
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 2rem;
     border-radius: 12px;
     text-align: center;
