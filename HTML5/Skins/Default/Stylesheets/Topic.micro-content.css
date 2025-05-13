@@ -433,63 +433,11 @@
 .micro-response-1003374004 div.MCBreadcrumbsBox_0
 {
 	border-bottom-width: 0;
-	color: #000000;
+	color: #b8ddb8;
 	border-bottom-style: solid;
 	border-bottom-color: black;
 	padding-bottom: 10px;
 	margin-bottom: 10px;
-}
-
-.micro-response-1003374004 .dropDown
-{
-	border-bottom: 1px solid #DADEE1;
-	padding: 10px 0;
-}
-
-.micro-response-1003374004 .dropDownHotspot
-{
-	cursor: hand;
-	text-decoration: none;
-	color: #000000;
-	font-size: 20pt;
-	font-weight: bold;
-	border-bottom: none;
-}
-
-.micro-response-1003374004 .dropDownHotspot:link
-{
-	cursor: hand;
-	text-decoration: none;
-	color: #000000;
-	font-size: 20pt;
-	font-weight: bold;
-	border-bottom: none;
-}
-
-.micro-response-1003374004 .MCDropDown_Open .MCDropDownHotSpot_.MCHotSpotImage
-{
-	background-position: left;
-	background-image: url('Minus.png');
-	padding-left: 10px;
-	padding-right: 0;
-}
-
-.micro-response-1003374004 .MCDropDown_Closed .MCDropDownHotSpot_.MCHotSpotImage
-{
-	background-position: left;
-	background-image: url('Plus.png');
-	padding-left: 10px;
-	padding-right: 0;
-}
-
-.micro-response-1003374004 .dropDownHead
-{
-	text-decoration: none;
-}
-
-.micro-response-1003374004 .dropDownBody
-{
-	padding: 10px 30px 0;
 }
 
 .micro-response-1003374004 .MCWebHelpFramesetLink a
